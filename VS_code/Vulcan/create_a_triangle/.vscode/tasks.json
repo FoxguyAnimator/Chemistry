@@ -1,0 +1,54 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe build active file",
+			"command": "C:\\msys64\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}",
+
+				"-IC:/Maxim/Programming/Extra_library/glfw-3.3.8/glfw-3.3.8/include/",
+                "-IC:/VulkanSDK/1.3.261.1/Include/",
+                "-IC:/msys64/mingw64/bin/",
+				"-IC:/Maxim/Programming/Extra_library/stb-master/stb-master/",
+				"-IC:/Maxim/Programming/Extra_library/glm-0.9.9.8/glm/",
+				
+                "-LC:/Maxim/Programming/Extra_library/glfw-3.3.8/glfw-3.3.8/src",
+                "-LC:/VulkanSDK/1.3.261.1/Lib/",
+
+                "-lvulkan-1",
+                "-lglfw3",
+                "-lgdi32",
+
+				/*"-IC:/Maxim/Programming/Extra_library/stb-master/stb-master/",
+				"-IC:/Maxim/Programming/Extra_library/glfw-3.3.8/glfw-3.3.8/include/GLFW/",
+				"-IC:/Maxim/Programming/VS_code/Vulcan/create_a_triangle/Include/",
+
+				"-LC:/Maxim/Programming/Extra_library/glfw-3.3.8/glfw-3.3.8/src/",
+				"-LC:/Maxim/Programming/VS_code/Vulcan/create_a_triangle/Lib/",
+				"-LC:/VulkanSDK/1.3.261.1/x86_64/",
+
+				"-lvulkan-1",
+				"-lglfw3",
+				"-lgdi32",
+				*/
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: C:\\msys64\\mingw64\\bin\\g++.exe"
+		}
+	]
+}

@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Maxim/Programming/VS_code/Vulcan/create_a_triangle/Include/**",
+                "C:/Maxim/Programming/Extra_library/glfw-3.3.8/glfw-3.3.8/include/GLFW/**",
+                "C:/Maxim/Programming/Extra_library/stb-master/stb-master/**",
+                "${workspaceFolder}/Include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.22000.0",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-msvc-x64"
+        }
+    ],
+    "version": 4
+}
